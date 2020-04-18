@@ -23,5 +23,3 @@ def get_price(name):
     soup = BeautifulSoup(page.text, "html.parser")
     soup = soup.find("div", class_="BNeawe iBp4i AP7Wnd")
     return (soup.text).split(" ")[0]
-
-print(get_price("chmf"))
